@@ -26,6 +26,10 @@ section{
 	line-height: 1.5;
 }
 
+nav{
+	float: right;
+	margin: 10px 0;
+}
 
 main{
 	text-align: center;
