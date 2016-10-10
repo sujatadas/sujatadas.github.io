@@ -1,0 +1,47 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: url("DanceWall.jpg");
+	background-size: cover;
+	font-family: "Times New Roman";
+	font-size: 18px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+header{
+	padding: 20px;
+	background-color: #7e335e;
+	color: white;
+}
+
+section{
+	float: right;
+	background-color: black;
+	width: 100%;
+	padding-left: 20px;
+	line-height: 1.5;
+}
+
+
+main{
+	text-align: center;
+	color: #132C6E;
+}
+
+
+main h2{
+	font-size: 50px;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	color: white;
+	padding-bottom: 20px;
+	bottom: 0;
+	position: absolute;
+}
