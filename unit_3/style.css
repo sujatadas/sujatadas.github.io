@@ -16,6 +16,7 @@ header{
 	padding: 20px;
 	background-color: #7e335e;
 	color: white;
+	text-decoration: underline;
 }
 
 section{
@@ -28,8 +29,12 @@ section{
 
 nav{
 	float: right;
-	margin: 10px 0;
 }
+
+nav a{
+	margin-left: 15px;
+}
+
 
 main{
 	text-align: center;
