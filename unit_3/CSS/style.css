@@ -4,8 +4,7 @@
 }
 
 body{
-	background: url("DanceWall.jpg");
-	background-size: cover;
+
 	font-family: "Times New Roman";
 	font-size: 18px;
 	font-style: italic;
@@ -15,36 +14,51 @@ body{
 header{
 	padding: 20px;
 	background-color: #7e335e;
-	color: white;
+	color: #a9a9a9;
 	text-decoration: underline;
 }
-
-section{
-	float: right;
+			
+section nav{
+	text-align: right;
 	background-color: black;
 	width: 100%;
-	padding-left: 20px;
+	padding: 10px 0;
 	line-height: 1.5;
-}
-
-nav{
-	float: right;
 }
 
 nav a{
 	margin-left: 15px;
+	text-decoration: none;
+	color: grey;
+	font-weight: 600;
 }
 
 
 main{
+	/*background image*/
+	background: url("../Images/DanceWall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+		/* Scaling*/
+	width: 100%;
+	/*Filling Background*/
+	min-height: 100vh;
+	/*Positioning*/
+	position: fixed;
 	text-align: center;
 	color: #132C6E;
 }
 
-
-main h2{
-	font-size: 50px;
+h2{
+	padding-top: 16px;
+	font-size: 48px;
 }
+
+main p{
+	font-weight: bold;
+	font-size: 20px;
+}
+
 
 footer{
 	background-color: black;
