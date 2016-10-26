@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sixing: border-box;
+}
+
+body{
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+header{
+	font-family: "Raleway", sans-serif;
+	/*Uncomment after unit 5*/
+	/*background-color: #7e335e;*/
+	color: #a9a9a9;
+	/*Remove after unit-5*/
+	background-color: #FFED74;
+	padding: 20px;
+	letter-spacing: 1px;
+}
+
+
+nav{
+	text-align: center;
+	/*Uncomment after unit 5*/
+	/*background-color: black;*/
+	/*Remove after unit 5*/
+	background-color: #E8C66A;
+}
+
+nav a{
+	width: 20%;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 1px;
+	/*Remove after unit 5*/
+	color: black;
+	/*uncomment after unit 5*/
+	/*color: #A9A9A9;*/
+	font:weight: 800;
+	padding: 10px 0;
+}
+
+nav a:hover{
+	background-color: #004d00;
+}
+
+main{
+	text-align: center;
+	color: #132C6E;
+	/*background Image*/
+	background: url("../Images/DanceWall.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	width: 100%;
+	position: fixed;	
+}
+
+/*Remove after unit 5*/
+section{
+	background-color: #FFE2B8;
+}
+
+h2{
+	padding-top: 1em;
+	font-size: 3em;
+	font-family: "Raleway", sans-serif;
+}
+
+section p{
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.button{
+	font-weight: bold;
+	font-size: 2em;
+	color: black;
+	border: 2px groove blue;
+	background-color: #132C6E;
+	margin: 0 3em ;
+	padding-bottom: 4px;
+	line-height: 12.23em;
+	text-decoration: none;
+}
+
+.button:hover{
+	background-color: #004d00;
+}
+
+footer{
+	/*Remove after unit 5*/
+	background-color: #FF957E;
+	/*Uncomment after unit 5*/
+	/*background-color: black;*/
+	width: 100%;
+	color: white;
+	bottom: 0;
+	position: absolute;
+	font-size: 1.2em;
+	letter-spacing: 1px;
+	padding: 10px 0;
+}
+
+footer p{
+	display: inline;
+}
+
+#note{
+	display: block;
+	float: right;
+	text-decoration: none;	
+	color: #004d00;
+	
+}
+
+.email{
+	text-decoration: none;
+	color: #004d00;
+}
+
+#wrapper{
+	width: 100%;
+	/*Remove after unit 5*/
+	background-color: #FFE2B8;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
