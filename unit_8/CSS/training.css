@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+
+header{
+	font-family: "Raleway", sans-serif;
+	background-color: #7e335e;
+	color: #a9a9a9;
+	padding: 0.6em;
+	/*letter-spacing: 1px;*/
+	/*added after adding rest.css*/
+	font-size: 2em;
+}
+
+nav{
+	text-align: center;
+	background-color: black;
+}
+
+nav a{
+	width: 20%;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.0625em;
+	color: #A9A9A9;
+	font:weight: 800;
+	padding: 0.625em 0;
+}
+
+nav a:hover{
+	background-color: #004d00;
+}
+
+main{
+	width: 100%;
+}
+section{
+	width: 98%;
+	margin: auto;
+	/*margin: 1% 1%;*/
+}
+
+table #one, table #two, td{
+	border-collapse: collapse;
+	text-align: left;
+	border: 0.0625em solid black;
+	color: blue;
+	font-size: 1.2em;
+	padding: 1% 1%;
+	margin: 2em;
+}
+
+th{
+	font-size: 1.5em;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+	text-align: left;
+	padding: 1em 1em 1em 0;
+	border: 0.0625em solid white;
+}
+
+#one{
+	float: left;
+	width: 46%;
+}
+
+#two{
+	float: right;
+	width: 46%;
+}
+
+caption{
+	font-size: 2em;
+	color: black;
+	padding: 0.5em 0;
+
+	/*border-bottom: 1px solid black;*/
+}
+
+form{
+	width: 98%;
+	margin: auto;
+}
+
+form input{
+	font-size: 1.5em;
+	color: white;
+	background-color: #132C6E;
+	display: inline;
+	/*margin: 0 44% 2% 44%;*/
+	line-height: 1.5em;
+	margin: 1% auto;
+	padding: 1%;
+	display: block;
+}
+
+form:hover input{
+	background-color: black;
+	display: block;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	width: 100%;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 0.0625em;
+}
+
+footer p{
+	display: inline;
+}
+
+footer h3{
+	font-size: 1.5em;
+	text-align: left;
+	color: white;
+	text-decoration: underline;
+	font-weight: bold;
+	padding-bottom: 0.625em;
+	/*padding: 10px 0;*/
+}
+
+#note{
+	display: block;
+	float: right;
+	text-decoration: none;	
+	color: #004d00;	
+}
+
+footer a{
+	text-decoration: none;
+	color: #004d00;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+#mobile{
+	display: none;
+}
+
+#wrapper{
+	width: 100%;
+}
+
+@media only screen and (max-width: 830px){
+	#one{
+		float: none;
+		width: 96%;
+		margin: auto;
+		max-width: 530px;
+
+	}
+	#two{
+		float: none;
+		margin: auto;
+		width: 96%;
+		max-width: 530px;
+	}
+}
+	
+@media only screen and (max-width: 580px){
+	nav a{
+		float: none;
+		width: auto;
+		display: none;
+		padding: .3125em 0;
+	}
+	#mobile{
+		display: block;
+	}
+	nav:hover a{
+		display: block;
+	}
+	#wrapper{
+		width: auto;
+		padding: 1px;
+	}
+
+	#note{
+		float: none;
+	}
+	footer{
+		text-align: center;
+	}
+	footer h3{
+		text-align: center;
+	}
+}

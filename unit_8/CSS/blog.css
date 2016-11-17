@@ -385,6 +385,7 @@ footer a{
 		float: none;
 		width: auto;
 		display: none;
+         		padding: .3125em 0;
 	}
 	#mobile{
 		display: block;
