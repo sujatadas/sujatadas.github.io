@@ -77,7 +77,7 @@ section h1{
 	/*min-height: 21.875em;*/
 	background: url("../Images/Joy.jpg");
 	background-repeat: no-repeat;  /*background image won't get repeated*/
-	background-size: cover;
+	background-size: 100% auto;
 	background-position: center center; /*for centering the image. x amd y axis i.e top and left*/
 }
 
@@ -365,9 +365,10 @@ footer a{
 	
 	#JoyOfDance{
 		max-width: 800px;
+		height: 56.25vw;
 		display: block;
 		margin: auto;
-		background-size: cover;
+		background-size: 100% auto;
 	}
 
 }
