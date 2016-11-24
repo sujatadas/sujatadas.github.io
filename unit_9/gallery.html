@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="CSS/reset.css">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="CSS/gallery.css">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1>Dance Academy</h1>
+    </header>
+
+    <nav class="clearfix">
+      <a href="#" id="mobile">&#9776;</a> 
+      <a href="#">Home</a>
+      <a href="#">Training</a>
+      <a href="#">Gallery</a>
+      <a href="#">Blog</a>
+      <a href="#">Contact</a>
+    </nav>
+    <main>
+      <div id="grad1">
+      <h2 class="picture">Gallery</h2>
+
+      <div>
+        <img class="mySlides" src="Images/ballet1.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/dance3.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/dance5.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/pilates1.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/pilates2.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/pilates4.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/zumba2.jpg" style="width: 100%">
+        <img class="mySlides" src="Images/zumba3.jpg" style="width: 100%">
+        <a class="left clearfix" onclick="plusDivs(-1)">Previous</a>
+        <a class="right clearfix" onclick="plusDivs(1)">Next</a>
+      </div>
+      </div>
+    </main>
+    <footer>
+      <h3>Contact</h3>
+      <p>If you have any queries, please reach out at <a href="mailto:abc@gmail.com">Email</a></p>
+      <a href="#" id="note">Go to Top</a>
+    </footer>
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) 
+{
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("image", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += "image";
+}
+
+</script>
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+header{
+	font-family: "Raleway", sans-serif;
+	background-color: #7e335e;
+	color: #a9a9a9;
+	padding: 0.6em;
+	/*added after adding rest.css*/
+	font-size: 2em;
+}
+
+nav{
+	text-align: center;
+	background-color: black;
+}
+
+nav a{
+	width: 20%;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.0625em;
+	color: #A9A9A9;
+	font:weight: 800;
+	padding: 0.625em 0;
+}
+
+nav a:hover{
+	background-color: #004d00;
+}
+
+h2, h3{
+	margin: 0.625em 0;
+	color: black;
+	font-weight: bold;
+	padding-top: 0.0625em;
+}
+
+h2{
+	text-decoration: underline;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+main{
+	width: 100%;
+}
+
+#grad1 {
+  background: red; 
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,0.2)); 
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,.2)); 
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,.2));
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,.2));
+}
+
+.left{
+	font-size: 1.3em;
+	cursor: pointer;
+	background-color: lightgreen;
+	border: 0.125em solid black;
+	padding: .3em;
+	float: left;
+	margin: 1em 0 0.5em 10em;
+}
+
+
+.right{
+	font-size: 1.3em;
+	cursor: pointer;
+	background-color: lightgreen;
+	border: 0.125em solid black;
+	padding: .3em;
+	float: right;
+	margin: 1em 10em .5em 0;
+}
+
+.mySlides{
+	
+	width: 100%;
+	max-width: 60em;
+	height: 30em;
+	margin: 0 auto;
+	min-height: 35.25vw;
+	border: .125em solid black;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	width: 100%;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 0.0625em;
+}
+
+footer p{
+	display: inline;
+}
+
+footer h3{
+	text-align: left;
+	color: white;
+	text-decoration: underline;
+}
+
+#note{
+	display: block;
+	float: right;
+	text-decoration: none;	
+	color: #004d00;
+}
+
+footer a{
+	text-decoration: none;
+	color: #004d00;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+#mobile{
+	display: none;
+}
+
+#wrapper{
+	width: 100%;
+	position: relative;
+}
+
+@media only screen and (min-width: 1300px){
+	#wrapper{
+		width: 100%;
+		margin: auto;
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 990px){
+	.mySlides{
+		width: 96%;
+		max-width: 96%;
+		min-height: 70vw;
+		margin: auto;
+
+	}
+}
+
+
+@media only screen and (max-width: 590px){
+	main{
+		width: 100%;
+		display: block;
+	}
+
+	.left{
+		float: none;
+		padding: .4em;
+		margin: .4em 0 0 0;
+		display: inline-block;
+	}
+	.right{
+		float: none;
+		padding: .4em;
+		display: inline-block;
+		clear: both;
+		margin-bottom: 0px;
+	}
+}
+
+@media only screen and (max-width: 570px){
+	#note{
+		float: none;
+	}
+	footer{
+		text-align: center;
+	}
+	footer h3{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 520px){
+	body{
+		font-size: 16px;
+	}
+
+	section h1{
+		font-size: 2em;
+	}
+
+	nav a{
+		float: none;
+		width: auto;
+		display: none;
+        padding: .3125em 0;
+	}
+	#mobile{
+		display: block;
+	}
+	nav:hover a{
+		display: block;
+	}
+	#wrapper{
+		width: auto;
+		padding: 1px;
+	}
+}
+
+

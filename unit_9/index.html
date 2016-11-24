@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dance Academy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/reset.css">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+		<div id="wrapper">
+			<header>
+				<h1>Dance Academy</h1>
+			</header>
+
+			<nav class="clearfix">	
+				<a href="#" id="mobile">&#9776;</a>
+				<a href="#">Home</a>
+				<a href="#">Training</a>
+				<a href="#">Gallery</a>
+				<a href="#">Blog</a>
+				<a href="#">Contact</a>
+			</nav>
+
+		<main>
+			<section>
+				<h2>Any Body Can Dance</h2>
+				<p>Come Join Us and Swing Along the Music.</p>
+			</section>
+			<form>
+				<input type="submit" id="register" value="Registration">
+			</form>
+				<!-- <a class="button" href="#">Registration</a> -->
+				<a class="button" href="#">Demo Class</a>
+		</main>
+
+		<footer>
+			<h3>Contact</h3>
+			<p>If you have any queries, please reach out at <a href="mailto:abc@gmail.com">Email</a></p>
+			<a href="#" id="note">Go to Top</a>
+		</footer>
+	<div>
+
+	<form class="clearfix" id="popup">
+				<span id="close">&times;</span>
+			    <h1>Login Form</h1><br>
+			    <h3>First Name</h3>
+			    <input type="text" name="firstname">
+			 	<h3>Last Name</h3>
+			 	<input type="text" name="lastname">
+			    <h3>Email Address</h3>
+			    <input type="text" name="email">
+			   	<h3>Password</h3>
+			   	<input type="password" name="password">
+			    <h3>Address</h3>
+			    <textarea name="address" rows="5" cols="25">
+			    </textarea>
+			    <input type="button" id="b1" value="Submit">
+			    <input type="button" id="b1" value="Clear">
+			</form>
+	<script>
+	// A $( document ).ready() block.
+	$( document ).ready(function() {
+	    console.log( "ready!" );
+	$("#register").click(function() {
+		$("#popup").show();
+		// $("wrapper").hide();
+		return false;
+	});
+	});
+		$( document ).ready(function() {
+	    console.log( "ready!" );
+	$("#close").click(function() {
+		$("#popup").hide();
+		$("#wrapper").show();
+		return false;
+	});
+	});
+	</script>
+</body>
+</html>

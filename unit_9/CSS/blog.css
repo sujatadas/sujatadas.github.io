@@ -1,0 +1,402 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+header{
+	font-family: "Raleway", sans-serif;
+	background-color: #7e335e;
+	color: #a9a9a9;
+	padding: 0.6em;
+	/*letter-spacing: 0.0625em;*/
+	/*added after adding rest.css*/
+	font-size: 2em;
+}
+
+nav{
+	text-align: center;
+	background-color: black;
+}
+
+nav a{
+	width: 20%;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.0625em;
+	color: #A9A9A9;
+	font:weight: 800;
+	padding: 0.625em 0;
+}
+
+nav a:hover{
+	background-color: #004d00;
+}
+
+main{
+	position: relative;
+}
+
+.container1{
+	width: 79%;
+	float: left;
+}
+
+section{
+	background-color: white;
+	margin: 0.5% -0.5% 0 0.5%;
+	border: .125em solid black;
+}
+
+section h1{
+	font-size: 2.5em;
+	text-align: center;
+	color: #132C6E;
+	font-family: "Raleway", sans-serif;
+	padding-bottom: 0.325em;
+}
+
+#JoyOfDance{
+	width: 100%;
+	max-width: 100%;
+	height: 21.875em;
+	/*min-height: 21.875em;*/
+	background: url("../Images/Joy.jpg");
+	background-repeat: no-repeat;  /*background image won't get repeated*/
+	background-size: 100% auto;
+	background-position: center center; /*for centering the image. x amd y axis i.e top and left*/
+}
+
+section p{
+	font-size: 1.2em;
+	text-align: center;
+	width: 100%;
+	max-width: 30em;
+	margin: 1em auto;
+	/*added after adding rest.css*/
+	letter-spacing: 0.0625em;
+}
+
+.quotation{
+	font-style: italic;
+	color: #F0AE7F;
+	/*added after adding rest.css*/
+	letter-spacing: 0.0625em;
+}
+
+.home{
+	margin: 0.5% -0.5% 0 0.5%;
+}
+
+h2, h3{
+	margin: 0.625em 0;
+	color: black;
+	font-weight: bold;
+	padding-top: 0.625em;
+}
+
+h2{
+	text-decoration: underline;
+	font-size: 2em;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.5em;
+	text-align: center;
+}
+
+article {
+	width: 100%;
+}
+
+.column1 {
+	width: 100%;
+	float: left;
+	background-color: black;
+	margin: 0.5% 0.5%;
+}
+
+.column1 .sub-column1 {
+	width: 56%;
+	float: left;
+	background-color: lightgreen;
+	margin: 0 1.5% 0 2%;
+}
+
+.sub-column1 img{
+	width: 100%;
+	max-width: 25em;
+	height: 25em;
+	margin: 0 13%;
+}
+
+.column1 .sub-column2 {
+	width: 36%;
+	float: left;
+	background-color: lightgreen;
+	margin: 0 2%;
+	margin-top: 5%;
+	color: #132C6E;
+}
+
+.sub-column2 p, .sub-column2 q{
+	text-align: center;
+	position: relative;
+	font-size: 1.2em;
+	font-style: italic;
+	color: #132C6E;
+	/*margin:  1em auto;*/
+	margin:  2%;
+	/*added after adding rest.css*/
+	letter-spacing: 0.0625em;
+}
+
+.container2 {
+	width: 19%;
+	margin: 0.5% 0.5% auto 0.5%;
+	background-color: lightgrey;
+	min-height: 100%;
+	height: 100%;
+	border: 0.125em solid black;
+	/*top: 0;*/
+	right: 0;
+	position: absolute;
+}
+
+.container2 aside{
+	text-align: center;
+}
+
+hr{
+	width: 5em;/*length of the hr line*/
+	margin: 1em auto;/*to move the hr line to center*/
+	height: 0.25em; /*is required to make it thick or visible*/
+	background-color: black;
+}
+
+aside h3{
+	padding: 0.5em 0;
+}
+
+aside a{
+	font-size: 1.2em;
+	font-weight: bold;
+	text-decoration: none;
+	color: blue;
+	/*added after adding rest.css*/
+	letter-spacing: 0.0625em;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	width: 100%;
+	color: white;
+	font-size: 1.2em;
+	letter-spacing: 0.0625em;
+}
+
+footer p{
+	display: inline;
+}
+
+footer h3{
+	text-align: left;
+	color: white;
+	text-decoration: underline;
+}
+
+#note{
+	display: block;
+	float: right;
+	text-decoration: none;	
+	color: #004d00;
+}
+
+footer a{
+	text-decoration: none;
+	color: #004d00;
+}
+
+#wrapper{
+	width: 100%;
+}
+
+#mobile{
+	display: none;
+}
+
+.clearfix:after{
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+@media only screen and (min-width: 1300px){
+	#wrapper{
+		width: 95%;
+		margin: auto;
+		font-size: 22px;
+	}
+}
+
+@media only screen and (max-width: 1110px){
+
+	.column1 .sub-column1{
+		float: none;
+		width: 100%;
+		margin: auto;
+	}	
+	.column1 .sub-column2{
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+	.sub-column1 img{
+		margin: 0 auto;
+		max-width: 100%;
+	}
+	.column1{
+		border: 2px solid black;
+	}
+	section p{
+		font-size: 22px;
+	}
+	.sub-column2 p, .sub-column2 q{
+		font-size: 20px;
+	}
+
+	.sub-column1 img{
+		display: block;
+		/*width: 100%;*/
+		max-width: 600px;
+	}
+}
+@media only screen and (max-width: 1000px){
+	.container1{
+		width: 74%;
+	}
+
+	.container2{
+		width: 24%;
+	}
+}
+
+@media only screen and (max-width: 830px){
+
+	section p{
+		font-size: 20px;
+	}
+	.sub-column2 p, .sub-column2 q{
+		font-size: 18px;
+	}
+
+	.sub-column2{
+		padding-bottom: 2px;
+	}
+
+	#JoyOfDance{
+		width: 100%;
+	}	
+
+	.container1{
+		width: 99%;
+		float: none;
+	}
+
+	article{
+		/*min-height: 36.7em;*/
+		height: 37em;
+		max-width: 99%;
+		margin: auto;
+	}
+	.container2{
+		width: 99%;
+		float: none;
+		height: 17.5em;
+		position: relative;
+		margin-top: 0.2em;
+		border: 2px solid black;
+		padding: 0 auto;
+		overflow: hidden;
+	}
+
+	footer{
+		position: absolute;
+		margin-top: .2em;
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 720px){
+	section p{
+		font-size: 20px;
+	}
+	.sub-column2 p, .sub-column2 q{
+		font-size: 18px;
+	}
+	#note{
+		float: none;
+	}
+	footer{
+		text-align: center;
+	}
+	footer h3{
+		text-align: center;
+	}
+	
+	#JoyOfDance{
+		max-width: 800px;
+		height: 56.25vw;
+		display: block;
+		margin: auto;
+		background-size: 100% auto;
+	}
+
+}
+
+@media only screen and (max-width: 600px){
+	body{
+		font-size: 16px;
+	}
+
+	section h1{
+		font-size: 2em;
+	}
+
+	nav a{
+		float: none;
+		width: auto;
+		display: none;
+         		padding: .3125em 0;
+	}
+	#mobile{
+		display: block;
+	}
+	nav:hover a{
+		display: block;
+	}
+	#wrapper{
+		width: auto;
+		padding: 1px;
+	}
+}
+

@@ -164,36 +164,81 @@
 			<a href="#" id="note">Go to Top</a>
 		</footer>	
 	</div>
-	<form class="clearfix" id="popup">
-				<span id="close">&times;</span>
-			    <h1>Login Form</h1><br>
-			    <h3>First Name</h3>
-			    <input type="text" name="firstname">
-			 	<h3>Last Name</h3>
-			 	<input type="text" name="lastname">
-			    <h3>Email Address</h3>
-			    <input type="text" name="email">
-			   	<h3>Password</h3>
-			   	<input type="password" name="password">
-			    <h3>Address</h3>
-			    <textarea name="address" rows="5" cols="25">
-			    </textarea>
-			    <input type="button" value="Submit">
-			</form>
+	<div class="clearfix" id="showup">
+		<form id="b1">
+			<span id="close">&times;</span>
+			<h1>Book A Session</h1>
+			<label>Category</label>
+			<select name="category">
+  				<option value="C1">Classes for Children</option>
+		  		<option value="C2">Classes for Adult</option>
+			</select>
+			<br>
+			<label>Session</label>
+			<select name="session">
+  				<option value="S1">Morning</option>
+		  		<option value="S2">Evening</option>
+			</select>
+			<br>
+			<label>Training</label>
+		</form>
+		<form id="b2">
+			<div class="group1">
+				<input type="checkbox" name="training" value="T1">Yoga
+				<br>
+				<input type="checkbox" name="training" value="T2">Zumba Fitness
+				<br>
+				<input type="checkbox" name="training" value="T3">Pilates
+				<br>
+				<input type="checkbox" name="training" value="T4">Beginners Hip Hop
+				<br>
+				<input type="checkbox" name="training" value="T5">Beginners Salsa
+				<br>
+				<input type="checkbox" name="training" value="T6">Beginners Contemporary
+				<br>
+				<input type="checkbox" name="training" value="T7">Beginners Ballet
+				<br>
+				<input type="checkbox" name="training" value="T8">Bollywood Masala
+				<br>
+			</div>
+			<div class="group">
+				<label>First Name</label>
+			    <input type="text" name="firstname" required>
+			    </div>
+			    <div class="group">
+			 	<label>Last Name</label>
+			 	<input type="text" name="lastname" required>
+			</div>
+		 		<br>
+			<div class="group2">
+			    <label>Email Address</label>
+			    <input type="email" name="email" required>
+		   	</div>
+			    <label>Phone Number</label>
+			    <input type="number" name="phoneno" required>
+		    	<br>
+	
+				<input type="button" class="button" value="Submit">
+				<input type="button" class="button" value="Clear">
+			
+		</form>
+	</div>
 	<script>
 	// A $( document ).ready() block.
 	$( document ).ready(function() {
 	    console.log( "ready!" );
 	$("#book-now").click(function() {
-		$("#popup").show();
-		// $("wrapper").hide();
+		$("#showup").show();
+		// $("#b1").show();
+		// $("#b2").show();
+		$("wrapper").hide();
 		return false;
 	});
 	});
 		$( document ).ready(function() {
 	    console.log( "ready!" );
 	$("#close").click(function() {
-		$("#popup").hide();
+		$("#showup").hide();
 		$("#wrapper").show();
 		return false;
 	});
