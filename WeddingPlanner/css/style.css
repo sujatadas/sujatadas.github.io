@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600i');
+
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Josefin Slab", serif;
+	font-size: 16px;
+	font-style: italic;
+	color: #132C6E;
+}
+
+
+header {
+	font-family: "Raleway", sans-serif;
+	background-color: #ffd6d1;
+	/*#7e335e;*/
+	color: #a5a5a5;
+	padding: 0.6em;
+	font-size: 2em;
+	text-align: center;
+}
+
+nav {
+	text-align: center;
+	background-color: black;
+}
+
+nav a {
+	width: 20%;
+	display: block;
+	float: left;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.0625em;
+	color: #A9A9A9;
+	font:weight: 800;
+	padding: 0.625em 0;
+	font-size: 1.2em;
+}
+
+nav a:hover {
+	background-color: #004d00;
+}
+
+.container1 {
+	width: 69%;
+	float: left;
+}
+
+/*#imgslides {
+	width: 100%;
+	max-width: 100%;
+	height: 37em;
+	background-image: url("../images/3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+    background-position: center center;
+    margin: 0.7% 0.7%;
+}*/
+
+#imgslides img{
+	width: 100%;
+	/*max-width: 25em;*/
+	height: 30em;
+    margin: 0.7% 0.7%;
+}
+
+.container1 section p {
+	width: 100%;
+	max-width: 27em;
+	text-align: center;
+	margin: 1em auto;
+	font-size: 1.2em;
+}
+
+.container2, #r1{
+	width: 29%;
+	margin: 0.5% 0.5% auto 0.5%;
+	background-color: #B9E8C3;
+	min-height: 100%;
+	height: 100%;
+	right: 0;
+	/*position: absolute;*/
+	float: right;
+}
+
+hr {
+	width: 5em;/*length of the hr line*/
+	margin: 1em auto;/*to move the hr line to center*/
+	height: 0.25em; /*is required to make it thick or visible*/
+	background-color: black;
+}
+
+#appoint h2, #review h2{
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: purple;
+}
+
+#appoint label, #appoint select, #appoint input, #review label, #review input{
+	font-size: 1.5em;
+	font-family: "Josefin Slab", serif;
+	/*padding: 1% 1%;*/
+	margin: 1.5% 1.5%;
+}
+
+#appoint #book-now, #review #rsubmit{
+	font-size: 1.5em;
+	color: white;
+	background-color: #132C6E;
+	margin: 2% auto;
+	padding: 1.5%;
+	line-height: 1.5em;
+	display: block;
+}
+
+#appoint #book-now:focus, #review #rsubmit:focus{
+	 border: 0.1em solid #09c000;
+}
+
+#appoint #book-now:hover, #review #rsubmit:hover{
+	 background-color: black;
+}
+
+#review textarea{
+	font-size: 1.5em;
+	/*margin: 0 auto;*/
+	display: block;
+	font-family: "Josefin Slab", serif;
+	margin: 0 0.5%;
+}
+
+/*#r1{
+
+	width: 29%;
+	margin: 0.5% 0.5% auto 0.5%;
+	background-color: lightgrey;
+	min-height: 100%;
+	height: 100%;
+	right: 0;
+	float: right;
+}*/
+
+#b2 input, #b2 textarea{
+	font-family: "Josefin Slab", serif;
+ 	font-size: 1.5em;
+ 	color: black;
+ 	background-color: lightyellow;
+ 	/*#7BABDB;*/
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+#b2 label{
+	font-family: "Josefin Slab", serif;
+	font-size: 1.5em;
+
+}
+
+#b2 h2{
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	font-size: 2.5em;
+	color: black;
+	padding: 0.5em 0 0.3em 0;
+}
+
+input:focus, textarea:focus {
+  border: 0.1em solid #09c000;
+}
+
+#b2 .button{
+	font-size: 1.5em;
+	color: white;
+	background-color: #132C6E;
+	margin: 1% auto;
+	padding: 2% 3%;
+	line-height: 1em;
+	display: inline;
+
+}
+
+#submit{
+	
+}
+
+#showup{
+	width: 100%;
+	margin: auto;
+	position: fixed;
+	background-color: #B9E8C3;
+	max-width: 60em;
+  	min-height: 70%;
+  	height: 70%;
+  	top: 3em;
+  	left: 0;
+  	right: 0;
+  	bottom: 10;
+  	display: none;
+  	padding: 1%;
+	position: absolute;
+
+}
+
+#close{
+	float: right;
+	width: 1.8em;
+	height: 1.8em;
+	border-radius: 50%;
+	border: 0.0625em solid black;
+	color: black;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+
+#third{
+	background-color: lightyellow;
+}
+
+#third #partner{
+	text-align: center;
+	font-size: 2em;
+	text-transform: uppercase;
+	color: purple;
+}
+
+.picture {
+  position: relative;
+  width: 24%;
+  float: left;
+  margin: 0.5% 0.5%;
+}
+
+.vendor {
+  display: block;
+  width: 100%;
+  height: 24em;
+}
+
+.desc {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 24em;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  /*filter: grayscale(100%);*/
+  background-color: lightsalmon;
+}
+
+.picture:hover .desc {
+  opacity: 0.7;  
+}
+
+.text {
+  color: #132C6E;
+  text-align: center;
+  font-size: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+#icons{
+	text-align: center;
+}
+
+.fa {
+  padding: 1.2em;
+  width: 3.5em;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-yelp {
+  background: red;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+#footnote{
+	background-color: black;
+	color: #ffd6d1;
+}
+
+footer h2 {
+	text-align: center;
+	font-size: 2em;
+}
+
+#wrapper {
+	width: 100%;
+}
+
+#mobile {
+	display: none;
+}
+
+.clearfix:after {
+	display: block;
+	content: " ";
+	clear: both;
+	font-size: 0;
+	visibility: hidden;
+	height: 0;
+}
+
+
+
